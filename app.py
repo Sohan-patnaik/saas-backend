@@ -1,5 +1,5 @@
-from backend.routes.upload import router as UploadRouter
-from backend.routes.agent import router as AgentRouter
+from routes.upload import router as UploadRouter
+from routes.agent import router as AgentRouter
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 

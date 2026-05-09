@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 import os
 import re
 import uuid
-from backend.controllers.ingestion_controller import IngestionController
+from controllers.ingestion_controller import IngestionController
 
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 ENV_PATH = os.path.join(BASE_DIR, ".env")

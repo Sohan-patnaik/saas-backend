@@ -1,6 +1,6 @@
-from backend.services.ingestion_service import Ingestion
-from backend.services.embedding_service import EmbeddingService
-from backend.services.retrieval_service import Retrieval
+from services.ingestion_service import Ingestion
+from services.embedding_service import EmbeddingService
+from services.retrieval_service import Retrieval
 
 
 class IngestionController:

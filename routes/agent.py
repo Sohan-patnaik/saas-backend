@@ -1,5 +1,5 @@
 from fastapi import APIRouter, HTTPException
-from backend.controllers.agent_controller import AgentController
+from controllers.agent_controller import AgentController
 from pydantic import BaseModel
 import traceback
 router = APIRouter()

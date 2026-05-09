@@ -1,6 +1,6 @@
-from backend.services.embedding_service import EmbeddingService
-from backend.services.retrieval_service import Retrieval
-from backend.controllers.rag_controller import RAG
+from services.embedding_service import EmbeddingService
+from services.retrieval_service import Retrieval
+from controllers.rag_controller import RAG
 import time
 from supabase import create_client
 import os
