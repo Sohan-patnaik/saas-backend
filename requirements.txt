@@ -5,7 +5,7 @@ langchain-core
 langchain-classic
 
 faiss-cpu
-sentence-transformers
+langchain_nvidia_ai_endpoints
 python-dotenv
 fastapi
 uvicorn

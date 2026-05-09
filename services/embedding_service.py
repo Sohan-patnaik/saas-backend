@@ -1,5 +1,6 @@
-from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_nvidia_ai_endpoints import NVIDIAEmbeddings
 from dotenv import load_dotenv
+import os
 
 load_dotenv()
 
@@ -7,8 +8,10 @@ load_dotenv()
 class EmbeddingService:
 
     def __init__(self):
-        self.embedding = HuggingFaceEmbeddings(
-            model_name="sentence-transformers/all-MiniLM-L6-v2"
+        self.embedding = NVIDIAEmbeddings(
+            model="nvidia/nv-embedqa-e5-v5",
+            api_key=os.getenv("NVIDIA_API_KEY"),
+            truncate="END",
         )
 
     def get_embedding(self):
