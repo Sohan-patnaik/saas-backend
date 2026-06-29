@@ -4,7 +4,11 @@ from dotenv import load_dotenv
 import os
 import re
 import uuid
+<<<<<<< HEAD
 from controllers.ingestion_controller import IngestionController
+=======
+from backend.controllers.ingestion_controller import IngestionController
+>>>>>>> 91acf44 (added chat stream api)
 
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 ENV_PATH = os.path.join(BASE_DIR, ".env")

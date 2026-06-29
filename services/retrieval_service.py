@@ -17,7 +17,6 @@ class Retrieval:
             chunk_size=1000,
             chunk_overlap=200
         )
-
         self.vector_store = None
         self.docs = None
         self.retriever = None
@@ -94,5 +93,4 @@ class Retrieval:
             raise ValueError("Retriever not initialized.")
 
         docs = self.retriever.invoke(query)
-
         return docs[:3]
